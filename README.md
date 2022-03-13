@@ -5,4 +5,6 @@ Has an AI to try and solve the game, if it can't then it remakes the game, so th
 
 Done as a sudo gamejam - compleated in under 24 hrs
 
+play the game - https://efschwarzrock.github.io/PP-Minesweaper/minesweeper/game/minesweeper.html 
+
  - p5.js(kahn academy library)
