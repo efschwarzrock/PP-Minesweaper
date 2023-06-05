@@ -201,6 +201,18 @@ function mousePressed() {
 function mouseClicked(event) {
   var rowClicked = Math.floor(mouseY/cellDim);
   var colClicked = Math.floor(mouseX/cellDim);
+  handelMouseActivation(rowClicked, colClicked);
+}
+
+function keyPressed(event) {
+  if(event.key == 's'){
+    var rowClicked = Math.floor(mouseY/cellDim);
+    var colClicked = Math.floor(mouseX/cellDim);
+    handelMouseActivation(rowClicked, colClicked);
+  }
+}
+
+function handelMouseActivation(rowClicked, colClicked){
   if(rowClicked >= 0 && rowClicked < h && colClicked >= 0 && colClicked < w){
     if(wasReset){
       var winnable = false;
